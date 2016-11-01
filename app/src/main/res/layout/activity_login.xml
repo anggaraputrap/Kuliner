@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_dark">
+
+        <TextView
+            android:text="Kuliner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:id="@+id/textView2"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/background_light" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="Password"
+            android:ems="10"
+            android:layout_below="@+id/editText3"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_marginTop="20dp"
+            android:id="@+id/editText4"
+            tools:inputType="textPassword" />
+
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/editText4"
+            android:layout_alignLeft="@+id/editText4"
+            android:layout_alignStart="@+id/editText4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:ems="10"
+            android:layout_marginTop="32dp"
+            android:id="@+id/editText3"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textEmailAddress"
+            tools:inputType="textEmailAddress" />
+    </RelativeLayout>
+</LinearLayout>
