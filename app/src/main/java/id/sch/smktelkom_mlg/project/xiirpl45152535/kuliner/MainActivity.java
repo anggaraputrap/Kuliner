@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,83 +14,26 @@ import android.widget.Button;
 
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn2,btn3,btn4;
+        private static int SPLASH_Time_out = 3000;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        @Override
+        protected void onCreate (Bundle savedInstanceState){
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-        final Animation animTranslate = AnimationUtils.loadAnimation(this, R.anim.anim_translate);
+            new Handler().postDelayed(new Runnable() {
 
-        btn1 = (Button) findViewById(R.id.buttonList);
-        btn2 = (Button)findViewById(R.id.buttonGambar);
-        btn3 = (Button)findViewById(R.id.buttonPeta);
-        btn4 = (Button)findViewById(R.id.buttonInfo);
+                @Override
+                public void run() {
+                    Intent homeIntent = new Intent(MainActivity.this, ListActivity.class);
+                    startActivity(homeIntent);
+                    finish();
+                }
+            }, SPLASH_Time_out);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                view.startAnimation(animTranslate);
-                Intent pindah = new Intent(MainActivity.this,ListActivity.class);
-                startActivity(pindah);
-            }
-        });
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                view.startAnimation(animTranslate);
-                Intent pindah = new Intent(MainActivity.this,GambarActivity.class);
-                startActivity(pindah);
-            }
-        });
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                view.startAnimation(animTranslate);
-                Intent pindah = new Intent(MainActivity.this,PetaActivity.class);
-                startActivity(pindah);
-            }
-        });
-
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                view.startAnimation(animTranslate);
-                Intent pindah = new Intent(MainActivity.this,InfoActivity.class);
-                startActivity(pindah);
-            }
-        });
-
-
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
         }
-
-        return super.onOptionsItemSelected(item);
     }
-}
+
 
