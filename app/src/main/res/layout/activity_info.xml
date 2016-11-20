@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app=""
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
@@ -10,4 +11,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.InfoActivity">
 
+    <TextView
+        android:text="Informasi Kuliner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:freezesText="false"
+        android:fontFamily="sans-serif-smallcaps"
+        style="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="                  Aplikasi Kuliner ini adalah aplikasii yang bertujuan untuk mempermudah anda mencari kuliner di daerah Malang, selain itu Aplikasi untuk juga bisa digunakan untuk meningkatkan wawasan kuliner daerah malang bagi para Pencinta Kuliner. Jika anda ingin tahu detail dari tempat makan tersebut anda bisa mengklik gambar atau list yang ada di Menu, dengan mengklik gambar/list tersebut anda akan di bawa ke jendela selanjtnya untuk mengetahui info lebih lanjut dari tempat yang ingin anda tuju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView"
+        android:fontFamily="sans-serif-condensed" />
 </RelativeLayout>
