@@ -21,9 +21,10 @@
         <activity
             android:name=".SignupActivity"
             android:theme="@style/AppTheme.Dark" />
-        <activity android:name=".VersiActivity" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".ListActivity" />
+        <activity android:name=".GambarActivity" />
+        <activity android:name=".PetaActivity" />
+        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>

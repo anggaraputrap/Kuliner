@@ -24,11 +24,19 @@
 
         <Button
             android:layout_gravity="center"
-            android:background="@drawable/menubtn"
+            android:background="@drawable/listbtn"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/buttonMenu" />
+            android:id="@+id/buttonList" />
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/gbrbtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/buttonGambar" />
 
         <Button
             android:layout_gravity="center"
@@ -36,22 +44,14 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/buttonMap" />
+            android:id="@+id/buttonPeta" />
 
         <Button
             android:layout_gravity="center"
-            android:background="@drawable/versibtn"
+            android:background="@drawable/infobtn"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:id="@+id/buttonInfo" />
-
-        <Button
-            android:layout_gravity="center"
-            android:background="@drawable/exitbtn"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:id="@+id/buttonExit" />
     </LinearLayout>
 </ScrollView>

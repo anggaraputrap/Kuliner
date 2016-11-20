@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 
@@ -20,15 +22,18 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1 = (Button) findViewById(R.id.buttonMenu);
-        btn2 = (Button)findViewById(R.id.buttonMap);
-        btn3 = (Button)findViewById(R.id.buttonInfo);
-        btn4 = (Button)findViewById(R.id.buttonExit);
+        final Animation animTranslate = AnimationUtils.loadAnimation(this, R.anim.anim_translate);
+
+        btn1 = (Button) findViewById(R.id.buttonList);
+        btn2 = (Button)findViewById(R.id.buttonGambar);
+        btn3 = (Button)findViewById(R.id.buttonPeta);
+        btn4 = (Button)findViewById(R.id.buttonInfo);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this,MenuActivity.class);
+                view.startAnimation(animTranslate);
+                Intent pindah = new Intent(MainActivity.this,ListActivity.class);
                 startActivity(pindah);
             }
         });
@@ -36,7 +41,8 @@ public class MainActivity extends ActionBarActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this,MapActivity.class);
+                view.startAnimation(animTranslate);
+                Intent pindah = new Intent(MainActivity.this,GambarActivity.class);
                 startActivity(pindah);
             }
         });
@@ -44,14 +50,18 @@ public class MainActivity extends ActionBarActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this,VersiActivity.class);
+                view.startAnimation(animTranslate);
+                Intent pindah = new Intent(MainActivity.this,PetaActivity.class);
                 startActivity(pindah);
             }
         });
 
         btn4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                moveTaskToBack(true);
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(animTranslate);
+                Intent pindah = new Intent(MainActivity.this,InfoActivity.class);
+                startActivity(pindah);
             }
         });
 
