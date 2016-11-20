@@ -18,7 +18,8 @@
         <activity android:name=".ListActivity" />
         <activity android:name=".GambarActivity" />
         <activity android:name=".PetaActivity" />
-        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
