@@ -2,8 +2,6 @@ package id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -48,7 +46,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 view.startAnimation(animTranslate);
-                Intent pindah = new Intent(Main2Activity.this,PetaActivity.class);
+                Intent pindah = new Intent(Main2Activity.this,MapsActivity.class);
                 startActivity(pindah);
             }
         });

@@ -22,6 +22,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- Google API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="  AIzaSyDBMVupOdtO84grMYAMUUnV_4rBsO_UQeQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,18 +40,10 @@
         </activity>
         <activity android:name=".ListActivity" />
         <activity android:name=".GambarActivity" />
-        <activity android:name=".PetaActivity" />
+        <activity android:name=".MapsActivity" />
         <activity android:name=".InfoActivity" />
         <activity android:name=".Main2Activity"></activity>
     </application>
-
-    <!-- Google API Key -->
-    <meta-data
-        android:name="com.google.android.maps.v2.API_KEY"
-        android:value="Google Maps API Key anda disini" />
-    <meta-data
-        android:name="com.google.android.gms.version"
-        android:value="@integer/google_play_services_version" />
 
 
 </manifest>
