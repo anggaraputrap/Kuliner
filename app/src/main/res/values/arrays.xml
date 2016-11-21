@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string-array name="foods">
+        <item>Tutti Fruity Cassata</item>
+        <item>Hot Green Tea</item>
+        <item>Masakan China</item>
+        <item>Milkshake Coklat</item>
+        <item>Cake In Jar</item>
+        <item>Cake</item>
+    </string-array>
+
+    <string-array name="food_desc">
+        <item>Sejak dulu, Toko Oen ini sudah dikenal dengan ice creamnya.</item>
+        <item>Restoran Monopoli populer di kalangan pasangan muda.</item>
+        <item>Makanan yang ada di Circle Cafe cukup bervariasi.</item>
+        <item>Cafe yang berdiri tanggal 17 Agustus 2013.</item>
+        <item>Jempol Untuk Cake in a Jar-nya Bunchbead.</item>
+        <item>Alice Tea Room yang soft launching pada 9 Juni 2014.</item>
+    </string-array>
+    <string-array name="food_details">
+        <item>Sejak dulu, Toko Oen ini sudah dikenal dengan ice creamnya. Varian rasa es krim seperti 
+		Tutti Fruity Cassata yang terbuat dari buah-buahan. Semua varian es krim tersebut bisa 
+		dinikmati dengan membayar sekitar Rp 20.000,- lebih.
+        </item>
+        <item>Monopoli menyajikan makanan khas Eropa. Soal harga, ratusan menu yang dihadirkan di Monopoli 
+		Park View Cafe and Resto cukup terjangkau. Kisarannya sekitar 10-30 ribu rupiah saja.
+        </item>
+        <item>Cafe yang berdiri tanggal 17 Agustus 2013 terlihat elegan dari tampilan luarnya, pintu 
+		masuknya bernuansa Bali dan semakin masuk kedalam nuansa Bali makin terasa dengan banyaknya 
+		ornamen-ornamen. Makanan yang ada di Circle Cafe cukup bervariasi, karena Circle Cafe menyediakan 
+		masakan barat, China, dan Jepang. Harga mulai dari Rp 10.000,-
+        </item>
+        <item>Cheesebury Kopitiam sendiri identik dengan makanan yang mengandung keju serta kopi sebagai minuman 
+		utamanya.Untuk harga makanan di Cheesebury Kopitiam Cafe  mulai dari Rp 15.000 hingga Rp 50.000
+        </item>
+        <item>Jempol Untuk Cake in a Jar-nya Bunchbead.Bunchbead selalu rame dikarenakan harga yang tertera 
+		di menu mulai 15.000 sampai harga termahal 23.000.
+        </item>
+        <item>Alice Tea Room Cafe hadir dengan tema vintage dan seru. Minuman dimulai dengan harga Rp 13.000. Untuk 
+		makanan mulai dengan harga Rp 2.500,-
+        </item>
+    </string-array>
+    <string-array name="food_locations">
+        <item>Depannya KFC Sarinah</item>
+        <item>Jalan Merbabu</item>
+        <item>Jalan Soekarno Hatta D414 Malang</item>
+        <item>Jalan. Dr. Sutomo no. 26 Kav C1-5 Malang</item>
+        <item>Sebelah Ruko Persewaan Film Atlantic Dinoyo</item>
+        <item>Jalan. Rinjani no. 5 Malang, Jawa Timur </item>
+    </string-array>
+    <array name="places_picture">
+        <item>@drawable/a</item>
+        <item>@drawable/b</item>
+        <item>@drawable/c</item>
+        <item>@drawable/d</item>
+        <item>@drawable/e</item>
+        <item>@drawable/f</item>
+    </array>
+</resources>
