@@ -3,14 +3,15 @@ package id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model;
 import android.graphics.drawable.Drawable;
 
 /**
- * Created by asus on 11/21/2016.
+ * Created by Acer on 11/22/2016.
  */
-public class Hotel {
+
+public class Food {
     public String judul;
     public String deskripsi;
     public Drawable foto;
 
-    public Hotel(String judul, String deskripsi, Drawable foto)
+    public Food(String judul, String deskripsi, Drawable foto)
     {
         this.judul = judul;
         this.deskripsi = deskripsi;

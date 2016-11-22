@@ -10,30 +10,34 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.R;
-import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Hotel;
+import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Food;
 
 /**
- * Created by asus on 11/21/2016.
+ * Created by Acer on 11/22/2016.
  */
-public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>{
-    ArrayList<Hotel> hotelList;
 
+public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
+    ArrayList<Food> foodList;
+
+    @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list,parent,false);
-        ViewHolder vh = new ViewHolder(v);
+        FoodAdapter.ViewHolder vh = new FoodAdapter.ViewHolder(v);
         return vh;
     }
 
+    @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Hotel hotel = hotelList.get(position);
-        holder.tvJudul.setText(hotel.judul);
-        holder.tvDeskripsi.setText(hotel.deskripsi);
-        holder.ivFoto.setImageDrawable(hotel.foto);
+        Food food = foodList.get(position);
+        holder.tvJudul.setText(food.judul);
+        holder.tvDeskripsi.setText(food.deskripsi);
+        holder.ivFoto.setImageDrawable(food.foto);
     }
 
+    @Override
     public int getItemCount() {
-        if (hotelList!=null)
-            return hotelList.size();
+        if (foodList!=null)
+            return foodList.size();
         return 0;
     }
 
@@ -49,7 +53,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>{
         }
     }
 
-    public HotelAdapter(ArrayList<Hotel> hotelList){
-        this.hotelList = hotelList;
+    public FoodAdapter(ArrayList<Food> foodList){
+        this.foodList = foodList;
     }
 }

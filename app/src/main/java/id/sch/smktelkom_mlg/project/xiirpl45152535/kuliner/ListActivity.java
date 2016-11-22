@@ -10,25 +10,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import java.util.ArrayList;
-
-import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.adapter.HotelAdapter;
-import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Hotel;
+import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.adapter.FoodAdapter;
+import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Food;
 
 public class ListActivity extends AppCompatActivity {
-    ArrayList<Hotel> mList = new ArrayList<>();
-    HotelAdapter mAdapter;
+    ArrayList<Food> mList = new ArrayList<>();
+    FoodAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_list);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new HotelAdapter(mList);
+        mAdapter = new FoodAdapter(mList);
         recyclerView.setAdapter(mAdapter);
 
         fillData();
@@ -49,7 +47,7 @@ public class ListActivity extends AppCompatActivity {
         a.recycle();
 
         for (int i = 0; i < arJudul.length; i++) {
-            mList.add(new Hotel(arJudul[i], arDeskripsi[i], arFoto[i]));
+            mList.add(new Food(arJudul[i], arDeskripsi[i], arFoto[i]));
         }
         mAdapter.notifyDataSetChanged();
     }
