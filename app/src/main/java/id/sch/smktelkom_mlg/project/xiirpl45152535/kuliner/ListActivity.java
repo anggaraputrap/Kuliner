@@ -17,7 +17,7 @@ import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.adapter.HotelAdapter;
 import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Hotel;
 
 public class ListActivity extends AppCompatActivity {
-    /*ArrayList<Hotel> mList = new ArrayList<>();
+   /* ArrayList<Hotel> mList = new ArrayList<>();
     HotelAdapter mAdapter;
 
     @Override
