@@ -36,21 +36,19 @@ public class ListActivity extends AppCompatActivity {
 
     private void fillData() {
         Resources resources = getResources();
-        String [] arJudul = resources.getStringArray(R.array.foods);
-        String [] arDeskripsi = resources.getStringArray(R.array.food_desc);
-        TypedArray a = resources.obtainTypedArray(R.array.places_picture);
+        String[] arJudul = resources.getStringArray(R.array.foods);
+        String[] arDeskripsi = resources.getStringArray(R.array.food_desc);
+        TypedArray a = resources.obtainTypedArray(R.array.foods_picture);
         Drawable[] arFoto = new Drawable[a.length()];
-        for (int i=0; i < arFoto.length; i++)
-        {
+        for (int i = 0; i < arFoto.length; i++) {
             BitmapDrawable bd = (BitmapDrawable) a.getDrawable(i);
-            RoundedBitmapDrawable rbd = RoundedBitmapDrawableFactory.create(getResources(),bd.getBitmap());
+            RoundedBitmapDrawable rbd = RoundedBitmapDrawableFactory.create(getResources(), bd.getBitmap());
             rbd.setCircular(true);
             arFoto[i] = rbd;
         }
         a.recycle();
 
-        for (int i = 0; i < arJudul.length; i++)
-        {
+        for (int i = 0; i < arJudul.length; i++) {
             mList.add(new Hotel(arJudul[i], arDeskripsi[i], arFoto[i]));
         }
         mAdapter.notifyDataSetChanged();

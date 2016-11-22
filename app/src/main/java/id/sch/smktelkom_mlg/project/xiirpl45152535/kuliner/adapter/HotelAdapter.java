@@ -15,7 +15,7 @@ import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Hotel;
 /**
  * Created by asus on 11/21/2016.
  */
-public class HotelAdapter {
+public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>{
     ArrayList<Hotel> hotelList;
 
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -35,10 +35,6 @@ public class HotelAdapter {
         if (hotelList!=null)
             return hotelList.size();
         return 0;
-    }
-
-    public void notifyDataSetChanged() {
-
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
