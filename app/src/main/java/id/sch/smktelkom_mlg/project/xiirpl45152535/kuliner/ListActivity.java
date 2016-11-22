@@ -17,13 +17,13 @@ import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.adapter.HotelAdapter;
 import id.sch.smktelkom_mlg.project.xiirpl45152535.kuliner.model.Hotel;
 
 public class ListActivity extends AppCompatActivity {
-   /* ArrayList<Hotel> mList = new ArrayList<>();
+    ArrayList<Hotel> mList = new ArrayList<>();
     HotelAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_main);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -54,5 +54,5 @@ public class ListActivity extends AppCompatActivity {
             mList.add(new Hotel(arJudul[i], arDeskripsi[i], arFoto[i]));
         }
         mAdapter.notifyDataSetChanged();
-    }*/
+    }
 }

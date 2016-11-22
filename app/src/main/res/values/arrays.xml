@@ -63,7 +63,7 @@
         <item>Sebelah Ruko Persewaan Film Atlantic Dinoyo</item>
         <item>Jalan. Rinjani no. 5 Malang, Jawa Timur </item>
     </string-array>
-    <array name="places_picture">
+    <array name="foods_picture">
         <item>@drawable/a</item>
         <item>@drawable/b</item>
         <item>@drawable/c</item>

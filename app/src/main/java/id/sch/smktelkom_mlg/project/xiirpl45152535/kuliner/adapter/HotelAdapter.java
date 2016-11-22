@@ -37,6 +37,10 @@ public class HotelAdapter {
         return 0;
     }
 
+    public void notifyDataSetChanged() {
+
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivFoto;
         TextView tvJudul;
